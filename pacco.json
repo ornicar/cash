@@ -3,6 +3,8 @@
   "components": {
     "core/export_esm": false,
     "core/extend": false,
+    "forms/serialize": false,
+    "forms/helpers/query_encode": false,
     "extra/get_script": false,
     "extra/shorthands": false
   },
@@ -26,7 +28,7 @@
       "options": {
         "templates": {
           "unminified": "/* MIT https://github.com/fabiospampinato/cash */\n(function(){\n[content]\n})();",
-          "minified": "/* MIT https://github.com/fabiospampinato/cash */\n(function(){\n[content]})();"
+          "minified": "(()=>{[content]})();"
         }
       }
     }
