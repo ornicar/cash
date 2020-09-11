@@ -10,6 +10,8 @@ interface Cash {
   val ( value: string | string[] ): this;
 }
 
+const checkableRe = /radio|checkbox/i;
+
 function val ( this: Cash ): string | string[];
 function val ( this: Cash, value: string | string[] ): Cash;
 function val ( this: Cash, value?: string | string[] ) {
