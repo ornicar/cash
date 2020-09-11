@@ -34,40 +34,6 @@
     }
   },
   "environments": {
-    "esm": {
-      "components": {
-        "core/export": false,
-        "core/export_esm": true
-      },
-      "paths": {
-        "output": {
-          "javascript": {
-            "unminified": "[dist]/[bundle].esm.js",
-            "minified": false
-          }
-        }
-      },
-      "plugins": {
-        "babel": {
-          "enabled": false
-        },
-        "typescript": {
-          "options": {
-            "target": "ES6"
-          }
-        },
-        "uglify": {
-          "enabled": false
-        },
-        "wrapper": {
-          "options": {
-            "templates": {
-              "unminified": "/* MIT https://github.com/fabiospampinato/cash */\n[content]\n"
-            }
-          }
-        }
-      }
-    },
     "production": {
       "plugins": {
         "uglify": {
