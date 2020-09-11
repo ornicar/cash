@@ -2,6 +2,7 @@
   "browsers": ["ie >= 11"],
   "components": {
     "core/export_esm": false,
+    "core/extend": false,
     "extra/get_script": false,
     "extra/shorthands": false
   },
@@ -11,12 +12,12 @@
     },
     "output": {
       "javascript": {
-        "unminified": "[dist]/[bundle].js",
-        "minified": "[dist]/[bundle].min.js"
+        "unminified": "[dist]/[bundle].lila.js",
+        "minified": "[dist]/[bundle].lila.min.js"
       },
       "typescript": {
-        "declaration": "[dist]/[bundle].d.ts",
-        "partial": "[dist]/[bundle].ts"
+        "declaration": "[dist]/[bundle].lila.d.ts",
+        "partial": "[dist]/[bundle].lila.ts"
       }
     }
   },
