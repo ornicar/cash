@@ -6,7 +6,8 @@
     "forms/serialize": false,
     "forms/helpers/query_encode": false,
     "extra/get_script": false,
-    "extra/shorthands": false
+    "extra/shorthands": false,
+    "manipulation/helpers/eval_scripts": false
   },
   "paths": {
     "tokens": {
