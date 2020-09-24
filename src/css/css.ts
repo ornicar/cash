@@ -3,7 +3,6 @@
 // @require core/type_checking.ts
 // @require collection/each.ts
 // @require ./helpers/compute_style.ts
-// @require ./helpers/get_prefixed_prop.ts
 // @require ./helpers/get_suffixed_value.ts
 // @require ./helpers/is_css_variable.ts
 
@@ -21,8 +20,6 @@ function css ( this: Cash, prop: string | Record<string, number | string>, value
   if ( isString ( prop ) ) {
 
     const isVariable = isCSSVariable ( prop );
-
-    prop = getPrefixedProp ( prop, isVariable );
 
     if ( arguments.length < 2 ) return this[0] && computeStyle ( this[0], prop, isVariable );
 
